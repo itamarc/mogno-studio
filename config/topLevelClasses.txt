@@ -1,0 +1,6 @@
+com.oktiva.mogno.html.Page
+com.oktiva.mogno.additional.Included
+com.oktiva.mogno.additional.PrototypePage
+com.oktiva.mogno.additional.PrototypeIncluded
+com.oktiva.mogno.additional.DerivedPage
+com.oktiva.mogno.additional.PrototypeDerivedPage

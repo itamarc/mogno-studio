@@ -1,0 +1,16 @@
+<?xml version="1.0" standalone="yes"?>
+
+<MognoApplication xmlns="http://www.oktiva.com.br/mogno" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.oktiva.com.br/mogno
+Application.xsd">
+<TopLevel name="StartPage" class="com.oktiva.mogno.studio.StartPage" xml="StartPage.xml"/>
+<TopLevel name="TopFramePage" class="com.oktiva.mogno.studio.TopFramePage" xml="TopFramePage.xml"/>
+<TopLevel name="CompTreeFramePage" class="com.oktiva.mogno.studio.CompTreeFramePage" xml="CompTreeFramePage.xml"/>
+<TopLevel name="ViewAppXmlPage" class="com.oktiva.mogno.studio.ViewAppXmlPage" xml="ViewAppXmlPage.xml"/>
+<TopLevel name="DerivedBasePage" class="com.oktiva.mogno.studio.DerivedBasePage" xml="DerivedBasePage.xml"/>
+<TopLevel name="ViewXmlPage" class="com.oktiva.mogno.studio.ViewXmlPage" xml="ViewXmlPage.xml"/>
+<TopLevel name="ObjectInspectorPage" class="com.oktiva.mogno.studio.ObjectInspectorPage" xml="ObjectInspectorPage.xml"/>
+<TopLevel name="TopLevelPage" class="com.oktiva.mogno.studio.TopLevelPage" xml="TopLevelPage.xml"/>
+<TopLevel name="ApplicationPage" class="com.oktiva.mogno.studio.ApplicationPage" xml="ApplicationPage.xml"/>
+<DefaultTopLevel name="StartPage"/>
+</MognoApplication>
+

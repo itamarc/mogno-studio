@@ -1,0 +1,151 @@
+<?xml version="1.0" standalone="yes"?>
+
+<MognoComponent xmlns="http://www.oktiva.com.br/mogno" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.oktiva.com.br/mogno
+Component.xsd">
+	<prop name="name" value="ApplicationPage"/>
+	<prop name="left" value="0"/>
+	<prop name="linkrel" value="&lt;link rel='stylesheet' type='text/css' href='/mogno-studio/style.css'&gt;"/>
+	<prop name="evOnCreate" value="onCreatePage"/>
+	<prop name="evOnShow" value="onShowPage"/>
+	<prop name="top" value="0"/>
+	<prop name="title" value="Mogno Studio"/>
+	<owned name="body">
+		<prop name="parent" value="ApplicationPage"/>
+		<prop name="left" value="0"/>
+		<prop name="top" value="0"/>
+		<prop name="__CLASSNAME__" value="com.oktiva.mogno.html.Body"/>
+	</owned>
+	<owned name="h1">
+		<prop name="parent" value="body"/>
+		<prop name="content" value="Mogno Studio"/>
+		<prop name="left" value="0"/>
+		<prop name="top" value="0"/>
+		<prop name="__CLASSNAME__" value="com.oktiva.mogno.html.H1"/>
+	</owned>
+	<owned name="error">
+		<prop name="parent" value="body"/>
+		<prop name="style" value="color: red;"/>
+		<prop name="left" value="1"/>
+		<prop name="top" value="0"/>
+		<prop name="__CLASSNAME__" value="com.oktiva.mogno.html.P"/>
+	</owned>
+	<owned name="applicationsForm">
+		<prop name="parent" value="body"/>
+		<prop name="left" value="0"/>
+		<prop name="top" value="2"/>
+		<prop name="__CLASSNAME__" value="com.oktiva.mogno.html.Form"/>
+		<prop name="method" value="POST"/>
+	</owned>
+	<owned name="defaultTopLevel">
+		<prop name="parent" value="applicationsForm"/>
+		<prop name="left" value="0"/>
+		<prop name="top" value="0"/>
+		<prop name="__CLASSNAME__" value="com.oktiva.mogno.html.Radiogroup"/>
+	</owned>
+	<owned name="table">
+		<prop name="border" value="0"/>
+		<prop name="parent" value="applicationsForm"/>
+		<prop name="left" value="0"/>
+		<prop name="top" value="2"/>
+		<prop name="__CLASSNAME__" value="com.oktiva.mogno.html.Table"/>
+	</owned>
+	<owned name="tcaption">
+		<prop name="parent" value="table"/>
+		<prop name="content" value="Top Levels:"/>
+		<prop name="left" value="0"/>
+		<prop name="top" value="0"/>
+		<prop name="__CLASSNAME__" value="com.oktiva.mogno.html.Caption"/>
+	</owned>
+	<owned name="tr1">
+		<prop name="parent" value="table"/>
+		<prop name="left" value="0"/>
+		<prop name="top" value="1"/>
+		<prop name="__CLASSNAME__" value="com.oktiva.mogno.html.Tr"/>
+	</owned>
+	<owned name="th1">
+		<prop name="parent" value="tr1"/>
+		<prop name="content" value="Name"/>
+		<prop name="left" value="0"/>
+		<prop name="top" value="0"/>
+		<prop name="__CLASSNAME__" value="com.oktiva.mogno.html.Th"/>
+	</owned>
+	<owned name="th2">
+		<prop name="parent" value="tr1"/>
+		<prop name="content" value="Class"/>
+		<prop name="left" value="1"/>
+		<prop name="top" value="0"/>
+		<prop name="__CLASSNAME__" value="com.oktiva.mogno.html.Th"/>
+	</owned>
+	<owned name="th3">
+		<prop name="parent" value="tr1"/>
+		<prop name="content" value="XML"/>
+		<prop name="left" value="2"/>
+		<prop name="top" value="0"/>
+		<prop name="__CLASSNAME__" value="com.oktiva.mogno.html.Th"/>
+	</owned>
+	<owned name="th4">
+		<prop name="parent" value="tr1"/>
+		<prop name="content" value="Default"/>
+		<prop name="left" value="3"/>
+		<prop name="top" value="0"/>
+		<prop name="__CLASSNAME__" value="com.oktiva.mogno.html.Th"/>
+	</owned>
+	<owned name="th5">
+		<prop name="parent" value="tr1"/>
+		<prop name="content" value="Status"/>
+		<prop name="left" value="4"/>
+		<prop name="top" value="0"/>
+		<prop name="__CLASSNAME__" value="com.oktiva.mogno.html.Th"/>
+	</owned>
+	<owned name="th6">
+		<prop name="parent" value="tr1"/>
+		<prop name="content" value="Actions"/>
+		<prop name="left" value="5"/>
+		<prop name="top" value="0"/>
+		<prop name="__CLASSNAME__" value="com.oktiva.mogno.html.Th"/>
+		<prop name="colspan" value="2"/>
+	</owned>
+	<owned name="p2">
+		<prop name="parent" value="applicationsForm"/>
+		<prop name="left" value="0"/>
+		<prop name="top" value="3"/>
+		<prop name="__CLASSNAME__" value="com.oktiva.mogno.html.P"/>
+	</owned>
+	<owned name="saveChanges">
+		<prop name="evOnClick" value="onClickSave"/>
+		<prop name="parent" value="p2"/>
+		<prop name="type" value="submit"/>
+		<prop name="value" value="Save Changes"/>
+		<prop name="left" value="0"/>
+		<prop name="top" value="0"/>
+		<prop name="__CLASSNAME__" value="com.oktiva.mogno.html.Input"/>
+	</owned>
+	<owned name="addTopLevel">
+		<prop name="evOnClick" value="onClickAdd"/>
+		<prop name="parent" value="p2"/>
+		<prop name="type" value="submit"/>
+		<prop name="value" value="Add Top Level"/>
+		<prop name="left" value="1"/>
+		<prop name="top" value="0"/>
+		<prop name="__CLASSNAME__" value="com.oktiva.mogno.html.Input"/>
+	</owned>
+	<owned name="viewAppXml">
+		<prop name="left" value="0"/>
+		<prop name="top" value="1"/>
+		<prop name="parent" value="p2"/>
+		<prop name="__CLASSNAME__" value="com.oktiva.mogno.html.Input"/>
+		<prop name="evOnClick" value="onClickViewAppXml"/>
+		<prop name="value" value="View XML"/>
+		<prop name="type" value="submit"/>
+	</owned>
+	<owned name="changeApp">
+		<prop name="evOnClick" value="onClickChangeApp"/>
+		<prop name="parent" value="p2"/>
+		<prop name="type" value="submit"/>
+		<prop name="value" value="Change Application"/>
+		<prop name="left" value="0"/>
+		<prop name="top" value="2"/>
+		<prop name="__CLASSNAME__" value="com.oktiva.mogno.html.Input"/>
+	</owned>
+</MognoComponent>
+

@@ -1,0 +1,241 @@
+<?xml version="1.0" standalone="yes"?>
+
+<MognoComponent xmlns="http://www.oktiva.com.br/mogno" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.oktiva.com.br/mogno
+Component.xsd">
+	<prop name="name" value="TopFramePage"/>
+	<prop name="left" value="0"/>
+	<prop name="linkrel" value="&lt;link rel='stylesheet' type='text/css' href='/mogno-studio/style.css'&gt;"/>
+	<prop name="evOnCreate" value="onCreatePage"/>
+	<prop name="evOnShow" value="onShowPage"/>
+	<prop name="top" value="0"/>
+	<owned name="body">
+		<prop name="parent" value="TopFramePage"/>
+		<prop name="left" value="0"/>
+		<prop name="top" value="0"/>
+		<prop name="__CLASSNAME__" value="com.oktiva.mogno.html.Body"/>
+	</owned>
+	<owned name="h1">
+		<prop name="parent" value="body"/>
+		<prop name="content" value="Mogno"/>
+		<prop name="left" value="0"/>
+		<prop name="top" value="0"/>
+		<prop name="__CLASSNAME__" value="com.oktiva.mogno.html.H1"/>
+	</owned>
+	<owned name="topForm">
+		<prop name="parent" value="body"/>
+		<prop name="style" value="margin-top: 0px; margin-bottom: 0px;"/>
+		<prop name="left" value="0"/>
+		<prop name="top" value="1"/>
+		<prop name="__CLASSNAME__" value="com.oktiva.mogno.html.Form"/>
+		<prop name="method" value="POST"/>
+	</owned>
+	<owned name="table1">
+		<prop name="style" value="margin-top: 0px; margin-bottom: 2px;"/>
+		<prop name="width" value="100%"/>
+		<prop name="left" value="0"/>
+		<prop name="border" value="0"/>
+		<prop name="top" value="1"/>
+		<prop name="parent" value="topForm"/>
+		<prop name="__CLASSNAME__" value="com.oktiva.mogno.html.Table"/>
+	</owned>
+	<owned name="tr1">
+		<prop name="parent" value="table1"/>
+		<prop name="left" value="0"/>
+		<prop name="top" value="0"/>
+		<prop name="__CLASSNAME__" value="com.oktiva.mogno.html.Tr"/>
+		<prop name="align" value="center"/>
+	</owned>
+	<owned name="td1">
+		<prop name="parent" value="tr1"/>
+		<prop name="style" value="width=10%; background-color: transparent;"/>
+		<prop name="left" value="0"/>
+		<prop name="top" value="0"/>
+		<prop name="__CLASSNAME__" value="com.oktiva.mogno.html.Td"/>
+	</owned>
+	<owned name="back">
+		<prop name="left" value="0"/>
+		<prop name="targetName" value="window"/>
+		<prop name="styleClass" value="actionSpan"/>
+		<prop name="mode" value="top"/>
+		<prop name="content" value=" Back "/>
+		<prop name="top" value="0"/>
+		<prop name="evOnClick" value="onClickBack"/>
+		<prop name="parent" value="td1"/>
+		<prop name="__CLASSNAME__" value="com.oktiva.mogno.additional.ActionSpan"/>
+	</owned>
+	<owned name="td3">
+		<prop name="parent" value="tr1"/>
+		<prop name="style" value="width=10%; background-color: transparent;"/>
+		<prop name="left" value="2"/>
+		<prop name="top" value="0"/>
+		<prop name="__CLASSNAME__" value="com.oktiva.mogno.html.Td"/>
+	</owned>
+	<owned name="viewXml">
+		<prop name="left" value="0"/>
+		<prop name="targetName" value="window"/>
+		<prop name="styleClass" value="actionSpan"/>
+		<prop name="mode" value="top"/>
+		<prop name="content" value=" View XML "/>
+		<prop name="top" value="0"/>
+		<prop name="evOnClick" value="onClickViewXml"/>
+		<prop name="parent" value="td3"/>
+		<prop name="__CLASSNAME__" value="com.oktiva.mogno.additional.ActionSpan"/>
+	</owned>
+	<owned name="td4">
+		<prop name="parent" value="tr1"/>
+		<prop name="style" value="width=70%; background-color: transparent;"/>
+		<prop name="left" value="3"/>
+		<prop name="top" value="0"/>
+		<prop name="__CLASSNAME__" value="com.oktiva.mogno.html.Td"/>
+	</owned>
+	<owned name="table2">
+		<prop name="cellspacing" value="0"/>
+		<prop name="left" value="0"/>
+		<prop name="__CLASSNAME__" value="com.oktiva.mogno.html.Table"/>
+		<prop name="parent" value="td4"/>
+		<prop name="top" value="0"/>
+		<prop name="style" value="border: solid 1px #996633; margin-top: 1px; margin-bottom: 1px;"/>
+		<prop name="cellpadding" value="0"/>
+	</owned>
+	<owned name="tr21">
+		<prop name="parent" value="table2"/>
+		<prop name="left" value="0"/>
+		<prop name="top" value="0"/>
+		<prop name="__CLASSNAME__" value="com.oktiva.mogno.html.Tr"/>
+	</owned>
+	<owned name="td211">
+		<prop name="styleClass" value="littleTitle"/>
+		<prop name="parent" value="tr21"/>
+		<prop name="content" value="Class:"/>
+		<prop name="left" value="0"/>
+		<prop name="top" value="0"/>
+		<prop name="__CLASSNAME__" value="com.oktiva.mogno.html.Td"/>
+	</owned>
+	<owned name="td212">
+		<prop name="styleClass" value="littleTitle"/>
+		<prop name="parent" value="tr21"/>
+		<prop name="content" value="Parent:"/>
+		<prop name="left" value="1"/>
+		<prop name="top" value="0"/>
+		<prop name="__CLASSNAME__" value="com.oktiva.mogno.html.Td"/>
+	</owned>
+	<owned name="td213">
+		<prop name="styleClass" value="littleTitle"/>
+		<prop name="parent" value="tr21"/>
+		<prop name="content" value="Name:"/>
+		<prop name="left" value="2"/>
+		<prop name="top" value="0"/>
+		<prop name="__CLASSNAME__" value="com.oktiva.mogno.html.Td"/>
+	</owned>
+	<owned name="td214">
+		<prop name="styleClass" value="littleTitle"/>
+		<prop name="parent" value="tr21"/>
+		<prop name="content" value="Top:"/>
+		<prop name="left" value="3"/>
+		<prop name="top" value="0"/>
+		<prop name="__CLASSNAME__" value="com.oktiva.mogno.html.Td"/>
+	</owned>
+	<owned name="td215">
+		<prop name="styleClass" value="littleTitle"/>
+		<prop name="parent" value="tr21"/>
+		<prop name="content" value="Left:"/>
+		<prop name="left" value="4"/>
+		<prop name="top" value="0"/>
+		<prop name="__CLASSNAME__" value="com.oktiva.mogno.html.Td"/>
+	</owned>
+	<owned name="td216">
+		<prop name="valign" value="bottom"/>
+		<prop name="parent" value="tr21"/>
+		<prop name="left" value="5"/>
+		<prop name="top" value="0"/>
+		<prop name="rowspan" value="2"/>
+		<prop name="__CLASSNAME__" value="com.oktiva.mogno.html.Td"/>
+	</owned>
+	<owned name="addComp">
+		<prop name="evOnClick" value="onClickAdd"/>
+		<prop name="parent" value="td216"/>
+		<prop name="type" value="submit"/>
+		<prop name="value" value=" Add "/>
+		<prop name="left" value="2"/>
+		<prop name="top" value="0"/>
+		<prop name="__CLASSNAME__" value="com.oktiva.mogno.html.Input"/>
+	</owned>
+	<owned name="tr22">
+		<prop name="parent" value="table2"/>
+		<prop name="left" value="0"/>
+		<prop name="top" value="1"/>
+		<prop name="__CLASSNAME__" value="com.oktiva.mogno.html.Tr"/>
+	</owned>
+	<owned name="td221">
+		<prop name="parent" value="tr22"/>
+		<prop name="left" value="0"/>
+		<prop name="top" value="1"/>
+		<prop name="__CLASSNAME__" value="com.oktiva.mogno.html.Td"/>
+	</owned>
+	<owned name="addCompClass">
+		<prop name="values" value="[]"/>
+		<prop name="parent" value="td221"/>
+		<prop name="left" value="0"/>
+		<prop name="top" value="0"/>
+		<prop name="__CLASSNAME__" value="com.oktiva.mogno.html.Select"/>
+	</owned>
+	<owned name="td222">
+		<prop name="parent" value="tr22"/>
+		<prop name="left" value="1"/>
+		<prop name="top" value="1"/>
+		<prop name="__CLASSNAME__" value="com.oktiva.mogno.html.Td"/>
+	</owned>
+	<owned name="addCompParent">
+		<prop name="values" value="[]"/>
+		<prop name="parent" value="td222"/>
+		<prop name="left" value="1"/>
+		<prop name="top" value="0"/>
+		<prop name="__CLASSNAME__" value="com.oktiva.mogno.html.Select"/>
+	</owned>
+	<owned name="td223">
+		<prop name="parent" value="tr22"/>
+		<prop name="left" value="2"/>
+		<prop name="top" value="1"/>
+		<prop name="__CLASSNAME__" value="com.oktiva.mogno.html.Td"/>
+	</owned>
+	<owned name="addCompName">
+		<prop name="maxlength" value="32"/>
+		<prop name="size" value="10"/>
+		<prop name="parent" value="td223"/>
+		<prop name="type" value="text"/>
+		<prop name="left" value="0"/>
+		<prop name="top" value="0"/>
+		<prop name="__CLASSNAME__" value="com.oktiva.mogno.html.Input"/>
+	</owned>
+	<owned name="td224">
+		<prop name="parent" value="tr22"/>
+		<prop name="left" value="3"/>
+		<prop name="top" value="1"/>
+		<prop name="__CLASSNAME__" value="com.oktiva.mogno.html.Td"/>
+	</owned>
+	<owned name="addCompTop">
+		<prop name="maxlength" value="4"/>
+		<prop name="size" value="4"/>
+		<prop name="parent" value="td224"/>
+		<prop name="type" value="text"/>
+		<prop name="left" value="0"/>
+		<prop name="top" value="0"/>
+		<prop name="__CLASSNAME__" value="com.oktiva.mogno.html.Input"/>
+	</owned>
+	<owned name="td225">
+		<prop name="parent" value="tr22"/>
+		<prop name="left" value="4"/>
+		<prop name="top" value="1"/>
+		<prop name="__CLASSNAME__" value="com.oktiva.mogno.html.Td"/>
+	</owned>
+	<owned name="addCompLeft">
+		<prop name="maxlength" value="4"/>
+		<prop name="size" value="4"/>
+		<prop name="parent" value="td225"/>
+		<prop name="type" value="text"/>
+		<prop name="left" value="0"/>
+		<prop name="top" value="0"/>
+		<prop name="__CLASSNAME__" value="com.oktiva.mogno.html.Input"/>
+	</owned>
+</MognoComponent>
+

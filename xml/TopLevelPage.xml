@@ -1,0 +1,55 @@
+<?xml version="1.0" standalone="yes"?>
+
+<MognoComponent xmlns="http://www.oktiva.com.br/mogno" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.oktiva.com.br/mogno
+Component.xsd">
+	<prop name="name" value="TopLevelPage"/>
+	<prop name="left" value="0"/>
+	<prop name="linkrel" value="&lt;link rel='stylesheet' type='text/css' href='/mogno-studio/style.css'&gt;"/>
+	<prop name="evOnCreate" value="onCreatePage"/>
+	<prop name="top" value="0"/>
+	<prop name="title" value="Mogno Studio"/>
+	<owned name="frameSet">
+		<prop name="parent" value="TopLevelPage"/>
+		<prop name="rows" value="100,*"/>
+		<prop name="left" value="0"/>
+		<prop name="top" value="0"/>
+		<prop name="__CLASSNAME__" value="com.oktiva.mogno.html.Frameset"/>
+	</owned>
+	<owned name="topFrame">
+		<prop name="evOnLoad" value="onLoadTop"/>
+		<prop name="parent" value="frameSet"/>
+		<prop name="left" value="0"/>
+		<prop name="top" value="0"/>
+		<prop name="__CLASSNAME__" value="com.oktiva.mogno.additional.ActionFrame"/>
+	</owned>
+	<owned name="subFrameSet">
+		<prop name="left" value="0"/>
+		<prop name="__CLASSNAME__" value="com.oktiva.mogno.html.Frameset"/>
+		<prop name="parent" value="frameSet"/>
+		<prop name="cols" value="300,*,150"/>
+		<prop name="top" value="1"/>
+		<prop name="id" value="subFrameSet"/>
+	</owned>
+	<owned name="objInspFrame">
+		<prop name="evOnLoad" value="onLoadObjectInspector"/>
+		<prop name="parent" value="subFrameSet"/>
+		<prop name="left" value="0"/>
+		<prop name="top" value="0"/>
+		<prop name="__CLASSNAME__" value="com.oktiva.mogno.additional.ActionFrame"/>
+	</owned>
+	<owned name="previewFrame">
+		<prop name="evOnLoad" value="onLoadPreview"/>
+		<prop name="parent" value="subFrameSet"/>
+		<prop name="left" value="1"/>
+		<prop name="top" value="0"/>
+		<prop name="__CLASSNAME__" value="com.oktiva.mogno.additional.ActionFrame"/>
+	</owned>
+	<owned name="compTreeFrame">
+		<prop name="evOnLoad" value="onLoadCompTree"/>
+		<prop name="parent" value="subFrameSet"/>
+		<prop name="left" value="2"/>
+		<prop name="top" value="0"/>
+		<prop name="__CLASSNAME__" value="com.oktiva.mogno.additional.ActionFrame"/>
+	</owned>
+</MognoComponent>
+

@@ -1,0 +1,117 @@
+body {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	text-align: left;
+}
+
+H1 {
+	color: #996633;
+	font-weight: bold;
+	font-size: large;
+	margin-top: 3px;
+	margin-bottom: 3px;
+}
+
+H2 {
+	color: #aa7744;
+	font-weight: bold;
+	font-size: 12pt;
+}
+
+TH {
+	background-color: #eeccaa;
+	color: #113355;
+	font-weight: bold;
+	font-size: 12pt;
+	padding: 5px;
+	text-align: center;
+}
+
+TD {
+	background-color: #ffeecc;
+	color: #001133;
+	font-size: 11pt;
+	padding: 5px;
+}
+
+UL {
+	margin-left: 0px;
+	padding-left: 15px;
+	border-style: solid;
+	border-width: 1px;
+	border-color: #aa7744;
+	border-right-width: 0px;
+	border-bottom-width: 0px;
+}
+
+LI {
+	color: #113355;
+	list-style-type: disc;
+	font-size: 11pt;
+	marker-offset: 5px;
+}
+
+CAPTION {
+	color: #aa7744;
+	font-weight: bold;
+	font-size: 12pt;
+	text-align: left;
+}
+
+FORM INPUT {
+	background-color: #eeeeee;
+	color: #000000;
+	border-style: solid;
+	border-width: 1px;
+	font-family: Arial, Helvetica;
+}
+
+FORM SELECT {
+	font-size: 11pt;
+	background-color: #eeeeee;
+	border-style: solid;
+	border-width: 1px;
+}
+
+FORM TEXTAREA {
+	background-color: #eeeeee;
+	border-style: solid;
+	border-width: 1px;
+	color: #000000;
+	scrollbar-3dlight-color: #FFFFFF;
+	scrollbar-arrow-color: #666666;
+	scrollbar-base-color: #eeeeee;
+	scrollbar-darkshadow-color: #333333;
+	scrollbar-face-color: #FFFFFF;
+	scrollbar-highlight-color: #333333;
+	scrollbar-shadow-color: #333333;
+}
+
+.error {
+	background-color: #ffff00;
+	color: #0000ff;
+}
+
+.clean {
+}
+
+.actionSpan {
+	background-color: #eeeeee;
+	color: #000000;
+	border-color: #dddddd;
+	border-style: solid;
+	border-width: 1px;
+	font-family: Arial, Helvetica;
+	padding-top: 2px;
+	padding-bottom: 2px;
+	padding-left: 4px;
+	padding-right: 4px;
+	cursor: default;
+}
+
+.littleTitle {
+	font-weight: bold;
+	font-size: x-small;
+	color: #aa7744;
+	margin-top: 1px;
+	margin-bottom: 0px;
+}

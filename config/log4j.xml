@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- $Id$ -->
+<!DOCTYPE log4j:configuration SYSTEM "log4j.dtd">
+
+<log4j:configuration xmlns:log4j="http://jakarta.apache.org/log4j/">
+	<appender name="mognoLog" class="org.apache.log4j.FileAppender">
+		<!-- logFile is set at MognoServlet -->
+		<param name="File" value="${logFile}"/>
+		<param name="Append" value="true"/>
+		<layout class="org.apache.log4j.PatternLayout">
+			<param name="ConversionPattern" value="%d %-5p %c %F:%L - %m\n"/>
+		</layout>
+	</appender>
+	<appender name="console" class="org.apache.log4j.ConsoleAppender">
+		<param name="Target" value="System.Out"/>
+		<layout class="org.apache.log4j.PatternLayout">
+			<param name="ConversionPattern" value="%d %-5p %c %F:%L - %m\n"/>
+		</layout>
+	</appender>
+	<category name="com.oktiva.mogno" additivity="false">
+		<priority value="warn"/>
+		<appender-ref ref="mognoLog"/>
+		<appender-ref ref="console"/>
+	</category>
+	<category name="com.oktiva.mogno.Component">
+		<priority value="warn"/>
+        </category>
+	<category name="com.oktiva.mogno.html">
+		<priority value="warn"/>
+        </category>
+	<category name="com.oktiva.mogno.xml">
+		<priority value="warn"/>
+        </category>
+	<category name="com.oktiva.mogno.additional">
+		<priority value="warn"/>
+        </category>
+</log4j:configuration>

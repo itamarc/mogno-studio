@@ -1,0 +1,133 @@
+<?xml version="1.0" standalone="yes"?>
+<MognoComponent xmlns="http://www.oktiva.com.br/mogno" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.oktiva.com.br/mogno
+Component.xsd">
+    <prop name="name" value="ObjectInspectorPage" />
+    <prop name="title" value="Object Inspector" />
+    <prop name="linkrel" value="&lt;link rel='stylesheet' type='text/css' href='/mogno-studio/style.css'&gt;"/>
+    <prop name="evOnCreate" value="onCreatePage" />
+    <prop name="style" value="BODY { margin: 0px; padding: 0px; } TABLE { margin: 0px; padding: 0px; }" />
+    <owned name="body">
+        <prop name="__CLASSNAME__" value="com.oktiva.mogno.html.Body" />
+        <prop name="left" value="0" />
+        <prop name="parent" value="ObjectInspectorPage" />
+        <prop name="top" value="0" />
+    </owned>
+    <owned name="form">
+        <prop name="__CLASSNAME__" value="com.oktiva.mogno.html.Form" />
+        <prop name="left" value="0" />
+        <prop name="method" value="post" />
+        <prop name="parent" value="body" />
+        <prop name="top" value="0" />
+    </owned>
+    <owned name="table">
+        <prop name="__CLASSNAME__" value="com.oktiva.mogno.html.Table" />
+        <prop name="left" value="0" />
+        <prop name="parent" value="form" />
+        <prop name="top" value="0" />
+        <prop name="width" value="100%" />
+    </owned>
+    <owned name="header">
+        <prop name="__CLASSNAME__" value="com.oktiva.mogno.html.Thead" />
+        <prop name="left" value="0" />
+        <prop name="parent" value="table" />
+        <prop name="top" value="0" />
+    </owned>
+    <owned name="trTop">
+        <prop name="__CLASSNAME__" value="com.oktiva.mogno.html.Tr" />
+        <prop name="left" value="0" />
+        <prop name="parent" value="header" />
+        <prop name="top" value="0" />
+    </owned>
+    <owned name="tdTrTop">
+        <prop name="__CLASSNAME__" value="com.oktiva.mogno.html.Td" />
+        <prop name="colspan" value="2" />
+        <prop name="left" value="0" />
+        <prop name="parent" value="trTop" />
+        <prop name="top" value="0" />
+    </owned>
+    <owned name="selectComponent">
+        <prop name="__CLASSNAME__" value="com.oktiva.mogno.html.Select" />
+        <prop name="evOnChange" value="onSelectComponentChange" />
+        <prop name="left" value="0" />
+        <prop name="onchange" value="this.form.submit()" />
+        <prop name="parent" value="tdTrTop" />
+        <prop name="top" value="0" />
+    </owned>
+    <owned name="trTitle">
+        <prop name="__CLASSNAME__" value="com.oktiva.mogno.html.Tr" />
+        <prop name="left" value="0" />
+        <prop name="parent" value="header" />
+        <prop name="top" value="1" />
+    </owned>
+    <owned name="th1TrTitle">
+        <prop name="__CLASSNAME__" value="com.oktiva.mogno.html.Th" />
+        <prop name="left" value="0" />
+        <prop name="parent" value="trTitle" />
+        <prop name="top" value="0" />
+    </owned>
+    <owned name="textTh1TrTitle">
+        <prop name="__CLASSNAME__" value="com.oktiva.mogno.additional.Template" />
+        <prop name="left" value="0" />
+        <prop name="parent" value="th1TrTitle" />
+        <prop name="source" value="name" />
+        <prop name="top" value="0" />
+        <prop name="type" value="string" />
+    </owned>
+    <owned name="th2TrTitle">
+        <prop name="__CLASSNAME__" value="com.oktiva.mogno.html.Th" />
+        <prop name="left" value="1" />
+        <prop name="parent" value="trTitle" />
+        <prop name="top" value="0" />
+    </owned>
+    <owned name="textTh2TrTitle">
+        <prop name="__CLASSNAME__" value="com.oktiva.mogno.additional.Template" />
+        <prop name="left" value="0" />
+        <prop name="parent" value="th2TrTitle" />
+        <prop name="source" value="value" />
+        <prop name="top" value="0" />
+        <prop name="type" value="string" />
+    </owned>
+    <owned name="content">
+        <prop name="__CLASSNAME__" value="com.oktiva.mogno.html.Tbody" />
+        <prop name="left" value="0" />
+        <prop name="parent" value="table" />
+        <prop name="top" value="1" />
+    </owned>
+    <owned name="footer">
+        <prop name="__CLASSNAME__" value="com.oktiva.mogno.html.Tfoot" />
+        <prop name="left" value="0" />
+        <prop name="parent" value="table" />
+        <prop name="top" value="2" />
+    </owned>
+    <owned name="trSubmit">
+        <prop name="__CLASSNAME__" value="com.oktiva.mogno.html.Tr" />
+        <prop name="left" value="0" />
+        <prop name="parent" value="footer" />
+        <prop name="top" value="1" />
+    </owned>
+    <owned name="td1TrSubmit">
+        <prop name="__CLASSNAME__" value="com.oktiva.mogno.html.Td" />
+        <prop name="colspan" value="2" />
+        <prop name="left" value="0" />
+        <prop name="parent" value="trSubmit" />
+        <prop name="top" value="0" />
+    </owned>
+    <owned name="submitSaveChanges">
+        <prop name="__CLASSNAME__" value="com.oktiva.mogno.html.Input" />
+        <prop name="evOnClick" value="onSaveChangesClick" />
+        <prop name="left" value="0" />
+        <prop name="parent" value="td1TrSubmit" />
+        <prop name="top" value="0" />
+        <prop name="type" value="submit" />
+        <prop name="value" value="Save Changes" />
+    </owned>
+    <owned name="submitDelete">
+        <prop name="__CLASSNAME__" value="com.oktiva.mogno.html.Input" />
+        <prop name="evOnClick" value="onDeleteClick" />
+        <prop name="left" value="1" />
+        <prop name="parent" value="td1TrSubmit" />
+        <prop name="top" value="0" />
+        <prop name="type" value="submit" />
+        <prop name="value" value="Delete" />
+    </owned>
+</MognoComponent>

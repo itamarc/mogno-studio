@@ -1,0 +1,65 @@
+<?xml version="1.0" standalone="yes"?>
+
+<MognoComponent xmlns="http://www.oktiva.com.br/mogno" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.oktiva.com.br/mogno
+Component.xsd">
+	<prop name="name" value="ViewAppXmlPage"/>
+	<prop name="left" value="0"/>
+	<prop name="linkrel" value="&lt;link rel='stylesheet' type='text/css' href='/mogno-studio/style.css'&gt;"/>
+	<prop name="evOnCreate" value="onCreatePage"/>
+	<prop name="evOnShow" value="onShowPage"/>
+	<prop name="top" value="0"/>
+	<owned name="Body">
+		<prop name="parent" value="ViewAppXmlPage"/>
+		<prop name="left" value="0"/>
+		<prop name="top" value="0"/>
+		<prop name="__CLASSNAME__" value="com.oktiva.mogno.html.Body"/>
+	</owned>
+	<owned name="h1">
+		<prop name="left" value="0"/>
+		<prop name="__CLASSNAME__" value="com.oktiva.mogno.html.H1"/>
+		<prop name="parent" value="Body"/>
+		<prop name="top" value="0"/>
+		<prop name="content" value="Mogno Studio"/>
+	</owned>
+	<owned name="FormXml">
+		<prop name="parent" value="Body"/>
+		<prop name="left" value="0"/>
+		<prop name="top" value="1"/>
+		<prop name="__CLASSNAME__" value="com.oktiva.mogno.html.Form"/>
+		<prop name="method" value="POST"/>
+	</owned>
+	<owned name="xmlText">
+		<prop name="parent" value="FormXml"/>
+		<prop name="rows" value="40"/>
+		<prop name="left" value="0"/>
+		<prop name="top" value="0"/>
+		<prop name="cols" value="80"/>
+		<prop name="style" value="width:100%"/>
+		<prop name="__CLASSNAME__" value="com.oktiva.mogno.html.Textarea"/>
+	</owned>
+	<owned name="P1">
+		<prop name="parent" value="FormXml"/>
+		<prop name="left" value="0"/>
+		<prop name="top" value="3"/>
+		<prop name="__CLASSNAME__" value="com.oktiva.mogno.html.P"/>
+	</owned>
+	<owned name="saveChanges">
+		<prop name="evOnClick" value="onClickSaveChanges"/>
+		<prop name="parent" value="P1"/>
+		<prop name="type" value="submit"/>
+		<prop name="value" value="Save Changes"/>
+		<prop name="left" value="0"/>
+		<prop name="top" value="1"/>
+		<prop name="__CLASSNAME__" value="com.oktiva.mogno.html.Input"/>
+	</owned>
+	<owned name="discardChanges">
+		<prop name="evOnClick" value="onClickDiscardChanges"/>
+		<prop name="parent" value="P1"/>
+		<prop name="type" value="submit"/>
+		<prop name="value" value="Discard Changes"/>
+		<prop name="left" value="0"/>
+		<prop name="top" value="2"/>
+		<prop name="__CLASSNAME__" value="com.oktiva.mogno.html.Input"/>
+	</owned>
+</MognoComponent>
+

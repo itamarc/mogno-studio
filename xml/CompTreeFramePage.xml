@@ -1,0 +1,72 @@
+<?xml version="1.0" standalone="yes"?>
+
+<MognoComponent xmlns="http://www.oktiva.com.br/mogno" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.oktiva.com.br/mogno
+Component.xsd">
+	<prop name="name" value="CompTreeFramePage"/>
+	<prop name="linkrel" value="&lt;link rel='stylesheet' type='text/css' href='/mogno-studio/style.css'&gt;"/>
+	<prop name="left" value="0"/>
+	<prop name="top" value="0"/>
+	<prop name="evOnCreate" value="onCreatePage"/>
+	<owned name="ScriptTooltip">
+		<prop name="parent" value="CompTreeFramePage"/>
+		<prop name="left" value="0"/>
+		<prop name="top" value="0"/>
+		<prop name="src" value="/mogno-studio/toolTip.js"/>
+		<prop name="__CLASSNAME__" value="com.oktiva.mogno.html.Script"/>
+	</owned>
+	<owned name="ScriptResize">
+		<prop name="parent" value="CompTreeFramePage"/>
+		<prop name="left" value="0"/>
+		<prop name="top" value="1"/>
+		<prop name="src" value="/mogno-studio/resize.js"/>
+		<prop name="__CLASSNAME__" value="com.oktiva.mogno.html.Script"/>
+	</owned>
+	<owned name="StyleCompTree">
+		<prop name="left" value="0"/>
+		<prop name="__CLASSNAME__" value="com.oktiva.mogno.html.Style"/>
+		<prop name="parent" value="CompTreeFramePage"/>
+		<prop name="top" value="2"/>
+		<prop name="content" value="DIV.tooltip { position: absolute; display: none; width: 140; font-size: 10pt; background-color: #ffffcc; border: 1px solid #bbbb80; } LI { background-color: #ffffff; cursor: default; } LI:hover { background-color: #ffeecc; }"/>
+	</owned>
+	<owned name="body">
+		<prop name="parent" value="CompTreeFramePage"/>
+		<prop name="style" value="margin: 1px 1px 1px 1px;"/>
+		<prop name="left" value="0"/>
+		<prop name="top" value="3"/>
+		<prop name="__CLASSNAME__" value="com.oktiva.mogno.html.Body"/>
+	</owned>
+	<owned name="spanResizeLink">
+		<prop name="style" value="float: right; font-size: 11px; text-decoration:none; cursor: e-resize;"/>
+		<prop name="left" value="0"/>
+		<prop name="styleClass" value="actionSpan"/>
+		<prop name="content" value="&lt;&gt;"/>
+		<prop name="top" value="0"/>
+		<prop name="parent" value="body"/>
+		<prop name="onclick" value="resizeFrames('subFrameSet'); return false;"/>
+		<prop name="__CLASSNAME__" value="com.oktiva.mogno.html.Span"/>
+	</owned>
+	<owned name="h2">
+		<prop name="parent" value="body"/>
+		<prop name="style" value="margin: 1px"/>
+		<prop name="content" value="Component Tree"/>
+		<prop name="left" value="0"/>
+		<prop name="top" value="1"/>
+		<prop name="__CLASSNAME__" value="com.oktiva.mogno.html.H2"/>
+	</owned>
+	<owned name="list">
+		<prop name="parent" value="body"/>
+		<prop name="left" value="0"/>
+		<prop name="top" value="2"/>
+		<prop name="separator" value="\|"/>
+		<prop name="__CLASSNAME__" value="com.oktiva.mogno.additional.ActiveList"/>
+	</owned>
+	<owned name="toolTipDiv">
+		<prop name="styleClass" value="tooltip"/>
+		<prop name="parent" value="body"/>
+		<prop name="left" value="0"/>
+		<prop name="top" value="3"/>
+		<prop name="__CLASSNAME__" value="com.oktiva.mogno.html.Div"/>
+		<prop name="id" value="tooltip"/>
+	</owned>
+</MognoComponent>
+

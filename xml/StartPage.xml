@@ -1,0 +1,198 @@
+<?xml version="1.0" standalone="yes"?>
+
+<MognoComponent xmlns="http://www.oktiva.com.br/mogno" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.oktiva.com.br/mogno
+Component.xsd">
+	<prop name="evOnCreate" value="onCreatePage"/>
+	<prop name="left" value="0"/>
+	<prop name="linkrel" value="&lt;link rel='stylesheet' type='text/css' href='/mogno-studio/style.css'&gt;"/>
+	<prop name="name" value="StartPage"/>
+	<prop name="title" value="Mogno Studio"/>
+	<prop name="top" value="0"/>
+	<owned name="body">
+		<prop name="__CLASSNAME__" value="com.oktiva.mogno.html.Body"/>
+		<prop name="left" value="0"/>
+		<prop name="parent" value="StartPage"/>
+		<prop name="top" value="0"/>
+	</owned>
+	<owned name="h1">
+		<prop name="__CLASSNAME__" value="com.oktiva.mogno.html.H1"/>
+		<prop name="content" value="Mogno Studio"/>
+		<prop name="left" value="0"/>
+		<prop name="parent" value="body"/>
+		<prop name="top" value="0"/>
+	</owned>
+	<owned name="error">
+		<prop name="__CLASSNAME__" value="com.oktiva.mogno.html.P"/>
+		<prop name="left" value="1"/>
+		<prop name="parent" value="body"/>
+		<prop name="style" value="color: red;"/>
+		<prop name="top" value="0"/>
+	</owned>
+	<owned name="appSelectForm">
+		<prop name="__CLASSNAME__" value="com.oktiva.mogno.html.Form"/>
+		<prop name="left" value="0"/>
+		<prop name="method" value="POST"/>
+		<prop name="parent" value="body"/>
+		<prop name="top" value="2"/>
+	</owned>
+	<owned name="br2">
+		<prop name="__CLASSNAME__" value="com.oktiva.mogno.html.Br"/>
+		<prop name="left" value="1"/>
+		<prop name="parent" value="appSelectForm"/>
+		<prop name="top" value="1"/>
+	</owned>
+	<owned name="br1">
+		<prop name="__CLASSNAME__" value="com.oktiva.mogno.html.Br"/>
+		<prop name="left" value="1"/>
+		<prop name="parent" value="appSelectForm"/>
+		<prop name="top" value="2"/>
+	</owned>
+	<owned name="Table1">
+		<prop name="__CLASSNAME__" value="com.oktiva.mogno.html.Table"/>
+		<prop name="left" value="0"/>
+		<prop name="parent" value="appSelectForm"/>
+		<prop name="top" value="3"/>
+	</owned>
+	<owned name="action">
+		<prop name="__CLASSNAME__" value="com.oktiva.mogno.html.Radiogroup"/>
+		<prop name="left" value="0"/>
+		<prop name="parent" value="Table1"/>
+		<prop name="top" value="0"/>
+	</owned>
+	<owned name="Tr4">
+		<prop name="__CLASSNAME__" value="com.oktiva.mogno.html.Tr"/>
+		<prop name="left" value="0"/>
+		<prop name="parent" value="Table1"/>
+		<prop name="top" value="1"/>
+	</owned>
+	<owned name="Th1">
+		<prop name="__CLASSNAME__" value="com.oktiva.mogno.html.Th"/>
+		<prop name="colspan" value="2"/>
+		<prop name="content" value="Welcome to Mogno Studio!"/>
+		<prop name="left" value="0"/>
+		<prop name="parent" value="Tr4"/>
+		<prop name="top" value="0"/>
+	</owned>
+	<owned name="Tr2">
+		<prop name="__CLASSNAME__" value="com.oktiva.mogno.html.Tr"/>
+		<prop name="left" value="0"/>
+		<prop name="parent" value="Table1"/>
+		<prop name="top" value="2"/>
+	</owned>
+	<owned name="Td3">
+		<prop name="__CLASSNAME__" value="com.oktiva.mogno.html.Td"/>
+		<prop name="left" value="0"/>
+		<prop name="parent" value="Tr2"/>
+		<prop name="top" value="0"/>
+	</owned>
+	<owned name="createApp">
+		<prop name="__CLASSNAME__" value="com.oktiva.mogno.html.Input"/>
+		<prop name="label" value="Create new application:"/>
+		<prop name="left" value="0"/>
+		<prop name="parent" value="Td3"/>
+		<prop name="radiogroup" value="action"/>
+		<prop name="required" value="false"/>
+		<prop name="top" value="3"/>
+		<prop name="type" value="radio"/>
+		<prop name="value" value="createApp"/>
+	</owned>
+	<owned name="Td4">
+		<prop name="__CLASSNAME__" value="com.oktiva.mogno.html.Td"/>
+		<prop name="left" value="0"/>
+		<prop name="parent" value="Tr2"/>
+		<prop name="top" value="1"/>
+	</owned>
+	<owned name="newApp">
+		<prop name="__CLASSNAME__" value="com.oktiva.mogno.html.Input"/>
+		<prop name="left" value="0"/>
+		<prop name="onfocus" value="javascript:document.appSelectForm.action[0].checked=true;"/>
+		<prop name="parent" value="Td4"/>
+		<prop name="required" value="false"/>
+		<prop name="style" value="width: 100%;"/>
+		<prop name="top" value="4"/>
+		<prop name="type" value="text"/>
+	</owned>
+	<owned name="Tr1">
+		<prop name="__CLASSNAME__" value="com.oktiva.mogno.html.Tr"/>
+		<prop name="left" value="0"/>
+		<prop name="parent" value="Table1"/>
+		<prop name="top" value="3"/>
+	</owned>
+	<owned name="Td1">
+		<prop name="__CLASSNAME__" value="com.oktiva.mogno.html.Td"/>
+		<prop name="left" value="0"/>
+		<prop name="parent" value="Tr1"/>
+		<prop name="top" value="0"/>
+	</owned>
+	<owned name="openApp">
+		<prop name="__CLASSNAME__" value="com.oktiva.mogno.html.Input"/>
+		<prop name="label" value="Open existing application:"/>
+		<prop name="left" value="0"/>
+		<prop name="parent" value="Td1"/>
+		<prop name="radiogroup" value="action"/>
+		<prop name="required" value="false"/>
+		<prop name="top" value="1"/>
+		<prop name="type" value="radio"/>
+		<prop name="value" value="openApp"/>
+	</owned>
+	<owned name="Td2">
+		<prop name="__CLASSNAME__" value="com.oktiva.mogno.html.Td"/>
+		<prop name="left" value="0"/>
+		<prop name="parent" value="Tr1"/>
+		<prop name="top" value="1"/>
+	</owned>
+	<owned name="existingApp">
+		<prop name="__CLASSNAME__" value="com.oktiva.mogno.html.Select"/>
+		<prop name="left" value="0"/>
+		<prop name="onfocus" value="javascript:document.appSelectForm.action[1].checked=true;"/>
+		<prop name="parent" value="Td2"/>
+		<prop name="required" value="false"/>
+		<prop name="style" value="width: 100%;"/>
+		<prop name="top" value="2"/>
+		<prop name="values" value="[]"/>
+	</owned>
+	<owned name="Tr3">
+		<prop name="__CLASSNAME__" value="com.oktiva.mogno.html.Tr"/>
+		<prop name="left" value="0"/>
+		<prop name="parent" value="Table1"/>
+		<prop name="top" value="4"/>
+	</owned>
+	<owned name="Td5">
+		<prop name="__CLASSNAME__" value="com.oktiva.mogno.html.Td"/>
+		<prop name="colspan" value="2"/>
+		<prop name="left" value="0"/>
+		<prop name="parent" value="Tr3"/>
+		<prop name="top" value="0"/>
+	</owned>
+	<owned name="go">
+		<prop name="__CLASSNAME__" value="com.oktiva.mogno.html.Input"/>
+		<prop name="evOnClick" value="onGoButtonClicked"/>
+		<prop name="left" value="0"/>
+		<prop name="parent" value="Td5"/>
+		<prop name="required" value="false"/>
+		<prop name="top" value="5"/>
+		<prop name="type" value="submit"/>
+		<prop name="value" value="Go!"/>
+	</owned>
+	<owned name="br3">
+		<prop name="__CLASSNAME__" value="com.oktiva.mogno.html.Br"/>
+		<prop name="left" value="1"/>
+		<prop name="parent" value="appSelectForm"/>
+		<prop name="top" value="3"/>
+	</owned>
+	<owned name="focusScript">
+		<prop name="__CLASSNAME__" value="com.oktiva.mogno.html.Script"/>
+		<prop name="left" value="1"/>
+		<prop name="parent" value="appSelectForm"/>
+		<prop name="script" value="document.appSelectForm.action[1].checked=true;"/>
+		<prop name="top" value="4"/>
+		<prop name="type" value="text/javascript"/>
+	</owned>
+	<owned name="br4">
+		<prop name="__CLASSNAME__" value="com.oktiva.mogno.html.Br"/>
+		<prop name="left" value="1"/>
+		<prop name="parent" value="appSelectForm"/>
+		<prop name="top" value="4"/>
+	</owned>
+</MognoComponent>
+
