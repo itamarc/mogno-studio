@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- (c) 2003 Oktiva Telecomunicações e Informática Ltda - http://www.oktiva.com.br -->
 <!-- $Id$ -->
 
 <project basedir="." default="all" name="Mogno Studio">
@@ -11,7 +10,7 @@
 <!-- ==================== File and Directory Names ======================== -->
   <property name="build.dir" value="build"/>
   <property name="dist.dir" value="dist"/>
-  <property name="war.file" value="${dist.dir}/${app.name}.war"/>
+  <property name="war.file" value="${dist.dir}/${app.name}_${app.version}.war"/>
 
 <!-- ==================== Compilation Classpath =========================== -->
   <path id="compile.classpath">
@@ -73,7 +72,7 @@
     <copy todir="${dist.dir}/WEB-INF/classes/">
 	<fileset dir="${build.dir}" includes="com/**"/>
     </copy>
-  <!-- copiar web.xml (config -> ${web-dist.dir}/WEB-INF/) -->
+  <!-- copy web.xml (config -> ${web-dist.dir}/WEB-INF/) -->
     <copy file="config/web.xml" todir="${dist.dir}/WEB-INF"/>
     <copy todir="${dist.dir}/WEB-INF/config">
 	<fileset dir="config/" excludes="web.xml" includes="*"/>
@@ -82,9 +81,10 @@
     <copy todir="${dist.dir}/WEB-INF/xml">
 	<fileset dir="xml" includes="*.xml"/>
     </copy>
-  <!-- copiar lib (${lib.home} -> ${web-dist.dir}/WEB-INF/lib/) -->
+  <!-- copy lib (${lib.home} -> ${web-dist.dir}/WEB-INF/lib/) -->
     <delete verbose="true">
 	<fileset dir="${dist.dir}/WEB-INF/lib" includes="mogno_*jar"/>
+	<fileset dir="${dist.dir}" includes="mogno-studio*war"/>
     </delete>
     <copy todir="${dist.dir}/WEB-INF/lib" verbose="true">
 	<fileset dir="lib" includes="*.jar"/>
@@ -96,13 +96,32 @@
     <jar basedir="${dist.dir}" excludes="*.war,*.ear" jarfile="${war.file}"/>
   </target>
 
+<!-- ==================== SFDist Target ===================================== -->
+  <target depends="dist" description="Create distribution files to SF.net" name="sfdist">
+    <delete verbose="true">
+	<fileset dir="${dist.dir}" includes="${app.name}_*.tar.gz"/>
+    </delete>
+    <tar destfile="${dist.dir}/${app.name}_${app.version}-src.tar.gz" compression="gzip">
+	    <tarfileset dir="." prefix="mogno-studio">
+		    <exclude name="**/CVS"/>
+		    <include name="config/**"/>
+		    <include name="src/**"/>
+		    <include name="web/**"/>
+		    <include name="xml/**"/>
+		    <include name="build.properties"/>
+		    <include name="build.xml"/>
+		    <include name=".classpath"/>
+		    <include name=".project"/>
+	    </tarfileset>
+    </tar>
+  </target>
 <!-- ==================== Deploy Target ===================================== -->
-  <target depends="dist" description="Deploys the sample application to a web container" name="deploy">
+  <target depends="dist" description="Deploys the application to a web container" name="deploy">
     <delete verbose="true" failonerror="false">
 	<fileset dir="${deploy.dir}/WEB-INF/lib" includes="mogno_*jar"/>
     </delete>
      <copy todir="${deploy.dir}">
-	<fileset dir="${dist.dir}" includes="**" excludes="*.war,*.ear"/>
+	     <fileset dir="${dist.dir}" includes="**" excludes="*.war,*.ear,*.gz"/>
      </copy>
      <touch file="${deploy.dir}/WEB-INF/web.xml"/>
   </target>
