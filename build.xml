@@ -93,7 +93,7 @@
 	<fileset dir="web" includes="**"/>
     </copy>
   <!-- criar war -->
-    <jar basedir="${dist.dir}" excludes="*.war,*.ear" jarfile="${war.file}"/>
+    <jar basedir="${dist.dir}" excludes="*.war,*.ear,*.gz" jarfile="${war.file}"/>
   </target>
 
 <!-- ==================== SFDist Target ===================================== -->
