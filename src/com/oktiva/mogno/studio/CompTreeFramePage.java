@@ -1,7 +1,8 @@
 /*
  * CompTreeFramePage.java
  *
- * Created on terça, 25 de fevereiro de 2003 13:57
+ * Created on terca, 25 de fevereiro de 2003 13:57
+ * vim:encoding=utf-8:fileencoding=utf-8
  */
 package com.oktiva.mogno.studio;
 

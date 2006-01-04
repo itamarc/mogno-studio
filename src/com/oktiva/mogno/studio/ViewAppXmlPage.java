@@ -1,7 +1,8 @@
 /*
  * ViewAppXmlPage.java
  *
- * Created on terça, 20 de maio de 2003 02:59
+ * Created on terca, 20 de maio de 2003 02:59
+ * vim:fileencoding=utf-8:encoding=utf-8
  */
 package com.oktiva.mogno.studio;
 

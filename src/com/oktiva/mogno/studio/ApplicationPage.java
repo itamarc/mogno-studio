@@ -2,6 +2,7 @@
  * ApplicationPage.java
  *
  * Created on 20 de Fevereiro de 2003, 02:27
+ * vim:fileencoding=utf-8:encoding=utf-8
  */
 package com.oktiva.mogno.studio;
 
@@ -243,7 +244,7 @@ public class ApplicationPage extends MognoStudioPage {
 			P p = (P)getChild("error");
 			p.setContent(p.getContent()+"Can't remove the default top level.");
 		} else {
-			// Remover o TopLevel da aplicação
+			// Remove TopLevel from application
 			app.removeTopLevel(topLevelName);
 			app.store();
 			// Remover os inputs e o p do estado
@@ -324,7 +325,7 @@ public class ApplicationPage extends MognoStudioPage {
 			if(oldName.equals(newName)) {
 				continue;
 			}
-			// Alterar o nome no hash de toplevels da aplicação
+			// Change name on application TopLevel hash
 			String classe = (String)((Hashtable)data.get(oldName)).get("class");
 			String xml = (String)((Hashtable)data.get(oldName)).get("xml");
 			app.removeTopLevel(oldName);
@@ -342,7 +343,7 @@ public class ApplicationPage extends MognoStudioPage {
 	private void renameComponents(String oldName, String newName)
 	throws IOException {
 		logger.debug("Renaming components from '"+oldName+"' to '"+newName+"'");
-		// Alterar os nomes dos componentes desta página
+		// Change component names in this page
 		String[] comps = {"topLevelName_","xmlFileName_","topLevelDefault_",
 		"topLevelStatus_","editTopLevel_","removeTopLevel_"};
 		for (int i=0; i<comps.length; i++) {

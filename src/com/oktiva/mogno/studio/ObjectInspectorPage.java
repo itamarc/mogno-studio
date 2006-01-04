@@ -1,7 +1,8 @@
 /*
  * ObjectInspectorPage.java
  *
- * Created on terça, 25 de fevereiro de 2003 04:27
+ * Created on terca, 25 de fevereiro de 2003 04:27
+ * vim:fileencoding=utf-8:encoding=utf-8
  */
 package com.oktiva.mogno.studio;
 
@@ -264,7 +265,7 @@ public class ObjectInspectorPage extends MognoStudioPage {
 		if(comp instanceof TopLevel) {
 			topLevel.setName(newName);
 			Hashtable data = app.getTopLevelsData();
-			// Alterar o nome no hash de toplevels da aplicação
+			// Alterar o nome no hash de toplevels da aplicaÃ§Ã£o
 			String classe = (String)((Hashtable)data.get(oldName)).get("class");
 			String xml = (String)((Hashtable)data.get(oldName)).get("xml");
 			app.removeTopLevel(oldName);

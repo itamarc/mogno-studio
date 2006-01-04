@@ -2,6 +2,7 @@
  * TopFramePage.java
  *
  * Created on segunda, 24 de fevereiro de 2003 17:51
+ * vim:fileencoding=utf-8:encoding=utf-8
  */
 package com.oktiva.mogno.studio;
 
@@ -104,14 +105,14 @@ public class TopFramePage extends MognoStudioPage {
 		String className = (String)classSel.getValues().get(0);
 		Select parentSel = (Select)getChild("addCompParent");
 		String parent = (String)parentSel.getValues().get(0);
-		// obter instância do componente criado
+		// obter instÃ¢ncia do componente criado
 		Class ownedClass = Class.forName(className);
 		Visual comp = (Visual)ownedClass.newInstance();
 		comp.setDesigning(designing);
 		comp.setParent(parent);
 		// gerar nome
 		comp.setName(createName(className));
-		// obter próximo top
+		// obter proximo top
 		Input inLeft = (Input)getChild("addCompLeft");
 		Input inTop = (Input)getChild("addCompTop");
 		if (NumberUtils.intValido(inTop.getValue())) {
@@ -132,14 +133,14 @@ public class TopFramePage extends MognoStudioPage {
 				comp.setLeft(getNextLeft(parent, comp.getTop()));
 			}
 		} else {
-			// O left fica sõ para o caso do cara estar querendo colocar um outro componente depois
+			// O left fica so para o caso do cara estar querendo colocar um outro componente depois
 			// com o left menor que o atual.
 			if (NumberUtils.intValido(inLeft.value)) {
 				comp.setLeft(Integer.parseInt(inLeft.getValue()));
 			} else {
 				comp.setLeft(0);
 			}
-			// adicionar no último top
+			// adicionar no Ãºltimo top
 			comp.setTop(getNextTop(parent));
 		}
 		// registrar o filho no topLevel
@@ -152,7 +153,7 @@ public class TopFramePage extends MognoStudioPage {
 		inTop.setValue("");
 		inLeft.setValue("");
 		resetParentSelect();
-		// mostrar página
+		// mostrar pÃ¡gina
 		application.outHtml(show());
 	}
 	private void resetParentSelect() {
