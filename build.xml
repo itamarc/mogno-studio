@@ -14,7 +14,7 @@
 
 <!-- ==================== Compilation Classpath =========================== -->
   <path id="compile.classpath">
-    <fileset dir="${env.JAVA_HOME}/lib">
+    <fileset dir="${java.lib.dir}">
       <include name="*.jar"/>
     </fileset>
     <fileset dir="${shared.lib.dir}">
@@ -49,7 +49,7 @@
 
 <!-- ==================== Compile Target ================================== -->
   <target depends="prepare" description="Compile Java sources" name="compile">
-	<ant dir="../mogno/" target="dist" inheritAll="false"/>
+	<ant dir="../mogno/" target="jar" inheritAll="false"/>
 	<delete verbose="true">
 		<fileset dir="lib" includes="mogno_*.jar"/>
 	</delete>
